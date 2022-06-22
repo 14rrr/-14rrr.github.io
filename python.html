@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="topic" content="Python">
+	<meta name="author" content="Truong Tien Dung">
+	<link rel="stylesheet" type="text/css" href="css_blog/python.css">
+	<title>Python</title>
+</head>
+<body>
+	<div>
+		<img id="img_intro" src="assets1/python_python.jpg">
+	</div>
+
+	<div id="flex_container">
+		<div id="div_left">
+			<nav id="nav">
+				<a href="#intro">Giới thiệu</a>
+				<a href="#guide">Lộ trình</a>
+				<a href="#syntax">Python căn bản</a>
+				<a href="#outstanding">Những program đã làm được</a>
+				<a href=""></a>
+			</nav>
+		</div>
+
+		<div id="div_right"> 
+			<h2 id="intro">Tóm tắt sơ lược về ngôn ngữ Python</h2>
+			<p>Python (phát âm tiếng Anh: /ˈpaɪθɑːn/) là một ngôn ngữ lập trình bậc cao cho các mục đích lập trình đa năng, do Guido van Rossum tạo ra và lần đầu ra mắt vào năm 1991. Python được thiết kế với ưu điểm mạnh là dễ đọc, dễ học và dễ nhớ. Python là ngôn ngữ có hình thức rất sáng sủa, cấu trúc rõ ràng, thuận tiện cho người mới học lập trình và là ngôn ngữ lập trình dễ học; được dùng rộng rãi trong phát triển trí tuệ nhân tạo. Cấu trúc của Python còn cho phép người sử dụng viết mã lệnh với số lần gõ phím tối thiểu. Vào tháng 7 năm 2018, van Rossum đã từ chức lãnh đạo trong cộng đồng ngôn ngữ Python sau 30 năm làm việc. 
+			Python hoàn toàn tạo kiểu động và dùng cơ chế cấp phát bộ nhớ tự động; do vậy nó tương tự như Perl, Ruby, Scheme, Smalltalk, và Tcl. Python được phát triển trong một dự án mã mở, do tổ chức phi lợi nhuận Python Software Foundation quản lý. 
+			Ban đầu, Python được phát triển để chạy trên nền Unix. Nhưng rồi theo thời gian, Python dần mở rộng sang mọi hệ điều hành từ MS-DOS đến Mac OS, OS/2, Windows, Linux và các hệ điều hành khác thuộc họ Unix. Mặc dù sự phát triển của Python có sự đóng góp của rất nhiều cá nhân, nhưng Guido van Rossum hiện nay vẫn là tác giả chủ yếu của Python. Ông giữ vai trò chủ chốt trong việc quyết định hướng phát triển của Python.
+			Python luôn được xếp hạng vào những ngôn ngữ lập trình phổ biến nhất.
+			<a href="https://vi.wikipedia.org/wiki/Python_(ng%C3%B4n_ng%E1%BB%AF_l%E1%BA%ADp_tr%C3%ACnh)">(nguồn: Wikipedia) </a></p><hr>
+
+			<h2 id="guide">Lộ trình học của tôi</h2>
+			<img src="assets1/guide_learn_python.jpg" width="600px">
+			<p><a href="https://dunglailaptrinh.notion.site/dunglailaptrinh/Beginners-Programming-Checklist-6d9d351aeb62440891c6f04827c1d744">(nguồn: Dung Lai)</a></p>
+			<ul>
+				<li>Đây là ngôn ngữ lặp trình đầu tiên tôi học . Tôi chọn học nó là ngôn ngữ đầu tiên căn bản là vì lúc tối bắt đầu học thì nó đang là ngôn ngữ lặp trình phổ biến nhất và còn dễ dùng , đơn giản và thân thiên với người mới . Nhưng cũng có thể được ứng dụng vào nhiều thứ (VD:code game, làm web , lập trình hướng đối tượng , …) </li>
+				<li>-Tôi học về python căn bản qua Khóa học Python – Cơ bản đến nâng cao – Dũng Lại Lập Trình<a href="https://www.facebook.com/groups/dunglailaptrinh.python"> link khóa học</a></li>
+				<li>Tôi học xong khóa trên mất khoảng 1 tháng mỗi ngày trung bình dành ra 3-4h để vừa code vừa học , có những hôm thì đến 8h/ngày.</li>
+				<li>Bắt đầu từ việc code và chạy chương trình trên terminal , qua những khái niệm cơ bản như str , int , for , while , pass , break , … (Như đã liệt kê ở trên).</li>
+				<li>Sau đó đến chạy code bằng thư viện pygame.Chạy những thứ đơn giản.</li>
+			</ul><hr>
+
+			<h2 id="syntax">Python căn bản</h2>
+			<h3>Những kiểu dữ liệu (căn bản)</h3>
+			<ul>
+				<li>string "str()" : dùng để gán hay chuyển kiểu dữ liệu sang dạng string</li>
+				<li>interger "int()" : dùng để gán hay chuyển kiểu dữ liệu sang dạng interger.Ngoài ra còn có tác dụng làm tròn</li>
+				<li>float "float()" : dùng để thể hiện chữ số dưới dạng số thập phân</li>
+				<li>boolean "bool" : chỉ dùng để thể hiện hai giá trị True & False .Nếu nó thể hiện False thì sẽ tiếp tục chạy những phần ở dưới còn True thì sẽ dừng lại</li>
+			</ul>
+
+			<h3>Câu lệnh có điều kiện & function (căn bản)</h3>
+			<ul>
+				<li>Câu lệnh "if": thực thi một khối lệnh nếu thoả mãn điều kiện, sử dụng cùng với else và elif (viết tắt của else-if).</li>
+				<li>Function : là hàm dùng để làm code tinh gọn hơn.Có thể hình dung nó như 1 cái hộp sẽ sử lí data mà t đưa vào theo trình tự,số lượng mà ta đã code trong function đó.Những data đầu vào còn gọi là các parameter và phải dùng return để trả lại giá trị (Có nhiều cách dùng cững như những ứng dụng của function tùy theo sáng tạo của coder)(Nếu muốn gọi function ra thì ta chỉ cần gán biến với tên function(parameter))</li>
+				<li>Class "class": thực thi một khối lệnh và gắn không gian tên cục bộ của nó vào một lớp, để dùng trong lập trình hướng đối tượng.(Trong 1 class có thể có nhiều function con cà có function chạy đầu tiên và duy nhất khi class được gọi là Function __inti__(self) )</li>
+			</ul>
+
+			<h3>Cú pháp (căn bản)</h3>
+			<ul>
+				<li>Câu lệnh gán, sử dụng một dấu bằng =</li>
+				<li>Câu lệnh "for": lặp qua một đối tượng lặp được, gán mỗi phần tử và một biến cục bộ để sử dụng trong khối lệnh của vòng lặp.
+				</li>
+				<li>Câu lệnh "while": thực thi một khối lệnh chừng nào điều kiện còn đúng.</li>
+				<li>Câu lệnh "try": cho phép bắt ngoại lệ được nâng lên (raise) trong khối lệnh và dùng vế "except" để xử lý; câu lệnh cũng đảm bảo rằng phần mã dọn dẹp trong khối "finally" sẽ được chạy dù có lỗi hay không.</li>
+				<li>Câu lệnh "def": định nghĩa một hàm hoặc phương thức.</li>
+				<li>Câu lệnh "with": bao bọc một khối lệnh bằng một bộ quản lí ngữ cảnh (context manager) (ví dụ như khoá luồng lại trước khi chạy mã rồi mở khoá, hoặc mở một tệp rồi đóng tệp lại), cho phép các hành vi kiểu RAII (sự đạt được tài nguyên là sự khởi tạo) và thay thể cho các câu lệnh try/finally thường thấy.(Hiều 1 cách đơn giản là câu lệnh nào có "with" ở đầu thì sau khi chạy câu lệnh đó và nhwungx phần con của nó nếu có.Thì nó sẽ tự dựng lại)</li>
+				<li>Câu lệnh "break": thoát ra khỏi vòng lặp.</li>
+				<li>Câu lệnh "continue": bỏ qua lần lặp này và tiếp tục với mục kế tiếp.</li>
+				<li>Câu lệnh "pass": đóng vai trò như là một dạng NOP. Câu lệnh này được dùng để tạo các khối lệnh rỗng.</li>
+				<li>Câu lệnh "return": trả lại một giá trị từ một hàm hay phương thức.</li>
+				<li>Câu lệnh "import": được dùng để nhập các mô đun co các hàm và biến được sử dụng trong chương trình hiện tại.</li>
+			</ul><hr>
+
+			<h2 id="outstanding">Những program nổi bật dùng python tạo ra sau 1 tháng</h2>
+			
+			<div id="img_python">
+				<div class="img_program_python">
+					<img src="assets1/45-...-60.jpg">
+					<p>Là 1 program dùng để tạo và chạy nhiều play list video chạy trên terminal .Có thể thêm , bớt , sửa , xóa , chạy , lưu video và thêm playlist <a href="python_blog/45-...-60_blog.py" download>Link code của program 1</a></p>
+				</div>
+
+				<div class="img_program_python">
+					<img src="assets1/61-...-66.jpg">
+					<p>Là 1 program dùng để random ra màu ở trong vùng tròn (Có dùng thư viện random của python).Khi nhấn vào random nó sẽ tự random ra màu bất kì trong tất cả các màu trong bộ màu RGB <a href="python_blog/61-...-66_blog.py" download>Link code của program 2</a></p>
+					
+				</div>
+
+				<div class="img_program_python">
+					<img src="assets1/71-...-end.jpg">
+					<p>Là 1 program nâng cấp hơn của program đầu chạy trên terminal.Nhưng chỉ có tác dụng chuyển user đến link của video đã click và chuyển playlist.Ngoài ra không cong gì khác <a href="python_blog/71-...-end_blog.py" download>Link code của program 3</a></p><hr>
+				</div>
+			</div>
+
+			<h2>Lời kết</h2>
+			<p>Python là ngôn ngữ lập trình đầu tiên tôi học.Nó đã giúp tôi khai sáng về lập trình và tư duy lặp trình,cũng như gia tăng khả năng tư duy logic</p>
+		</div>
+	</div>
+
+	<footer>
+		<h3>
+			<span><a href="begin.html">&#10229</a></span>
+			<strong>Được tạo ra bởi - Trương Dũng</strong>
+			<span><a href="web.html">&#8594</a></span>
+		</h3>
+	</footer>
+
+</body>
+</html>

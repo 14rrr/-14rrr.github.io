@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="topic" content="Python">
+	<meta name="author" content="Truong Tien Dung">
+	<link rel="stylesheet" type="text/css" href="css_blog/ai.css">
+	<title>AI</title>
+</head>
+<body>
+	<div>
+		<img id="img_intro" src="assets1/ai_main.jpg">
+	</div>
+
+	<div id="flex_container">
+		<div id="div_left">
+			<nav id="nav">
+				<a href="#intro">Giới thiệu</a>
+				<a href="#guide">Lộ trình</a>
+				<div class="syntax">
+					<button class="syntaxbtn">Thuât toán AI căn bản căn bản</button>
+					<div class="syntax-content">
+						<a href="#Kmeans">Kmeans</a>
+						<a href="#Linear_Regression">Linear Regression</a>
+						<a href="#Gradient_Desent">Gradient Desent</a>
+						<a href="#KNN">KNN</a>
+					</div>
+				</div>
+
+			</nav>
+		</div>
+
+		<div id="div_right"> 
+		<h2 id="intro">AI là gì ?</h2>
+		<p>Trong khoa học máy tính, trí tuệ nhân tạo hay AI (tiếng Anh: artificial intelligence), đôi khi được gọi là trí thông minh nhân tạo, là trí thông minh được thể hiện bằng máy móc, trái ngược với trí thông minh tự nhiên của con người. Thông thường, thuật ngữ "trí tuệ nhân tạo" thường được sử dụng để mô tả các máy móc (hoặc máy tính) có khả năng bắt chước các chức năng "nhận thức" mà con người thường phải liên kết với tâm trí, như "học tập" và "giải quyết vấn đề".
+
+		Khi máy móc ngày càng tăng khả năng, các nhiệm vụ được coi là cần "trí thông minh" thường bị loại bỏ khỏi định nghĩa về AI, một hiện tượng được gọi là hiệu ứng AI.Một câu châm ngôn trong Định lý của Tesler nói rằng "AI là bất cứ điều gì chưa được thực hiện." Ví dụ, nhận dạng ký tự quang học thường bị loại trừ khỏi những thứ được coi là AI, đã trở thành một công nghệ thông thường.Khả năng máy hiện đại thường được phân loại như AI bao gồm thành công hiểu lời nói của con người, cạnh tranh ở mức cao nhất trong trò chơi chiến lược (chẳng hạn như cờ vua và Go),xe hoạt động độc lập, định tuyến thông minh trong mạng phân phối nội dung, và mô phỏng quân sự.
+
+		Trí tuệ nhân tạo có thể được phân thành ba loại hệ thống khác nhau: trí tuệ nhân tạo phân tích, lấy cảm hứng từ con người và nhân tạo.AI phân tích chỉ có các đặc điểm phù hợp với trí tuệ nhận thức; tạo ra một đại diện nhận thức về thế giới và sử dụng học tập dựa trên kinh nghiệm trong quá khứ để thông báo các quyết định trong tương lai. AI lấy cảm hứng từ con người có các yếu tố từ trí tuệ nhận thức và cảm xúc; hiểu cảm xúc của con người, ngoài các yếu tố nhận thức và xem xét chúng trong việc ra quyết định. AI nhân cách hóa cho thấy các đặc điểm của tất cả các loại năng lực (nghĩa là trí tuệ nhận thức, cảm xúc và xã hội), có khả năng tự ý thức và tự nhận thức được trong các tương tác.<a href="https://vi.wikipedia.org/wiki/Tr%C3%AD_tu%E1%BB%87_nh%C3%A2n_t%E1%BA%A1o">(nguồn Wikipedia)</a></p><hr>
+
+		<h2>Lộ trình học code AI căn bản của tôi</h2>
+		<img src="assets1/guide_learn_ai.jpg" width="500px">
+		<p><a href="https://dunglailaptrinh.notion.site/dunglailaptrinh/Beginners-Programming-Checklist-6d9d351aeb62440891c6f04827c1d744">(nguồn: Dung Lai)</a></p>
+		<ul>
+			<li>Trước khi học về code AI căn bản thì bạn cần phải nắm rõ những khái niệm cơ bản về Đại số tuyến tính,Cách biểu diễn vector,ma trận,cộng,nhân các ma trận,...</li>
+			<li>Sau đó học sang những phần cốt lõi trong những thuật toán cơ bản trong AI và code lại những phần cốt lõi đó (Không dùng thư viện)</li>
+			<li>Có thể lấy data ở những Datasets phổ biến như: Iris Flower,MNIST,CIFAR-10,...</li>
+			<li>Sau khi đã hiểu rõ bản chất của thuật toán thì ta chuyển sang học cách sử dụng thư viện và tìm ra những điểm mạnh , yếu của các thuật toán khác nhau để từ đó có thể lựa chọn sao cho phù hợp</li>
+		</ul><hr>
+
+	<!-- Kmeans -->
+		<h2 id="Kmeans">Kmeans</h2>
+		<p>Kmeans là một loại thuật toán (Unsupervised Learning)(Học không giám sát).Hay còn được gọi cách khác là loại thuật toán phân cụm</p>
+		<p>Ưu điểm:</p>
+		<ul>
+			<li>Là loại thuật toán có thể áp dụng được tốt kể cả ở không gian nhiều chiều (Nghĩa là có nhiều loại dữ liệu)</li>
+			<li>Khi đã phân cụm được thành các đối tượng thành các nhóm khác nhau rồi thì việc xác định nhóm đối tượng cho data mới là chuyện dễ dàng</li>
+		</ul>
+
+		<p>Nhược điểm:</p>
+		<ul>
+			<li>Vì là thuật toán phân cụm nên việc random ra những điểm hay nhóm đối tượng ban đầu sao cho phù hợp nhất để cho có thể phân cụm được các nhóm tối ưu nhất là việc khó khăn và cần những phương pháp random riêng chứ không phải là random ra các điểm khởi đầu ngẫu nhiên</li>
+			<li>Thời gian huấn luyện lớn</li>
+			<li>Cần phải lựa chọn số nhóm mà ta muốn phân cụm (có thể dùng vòng lặp để chạy)</li>
+			<li>Định nghĩa tính cách cá nhân khách hàng dựa trên mối quan tâm của họ (thông qua lịch sử mua sắm)</li>
+			<li>Tạo profile của khách hàng dựa trên dữ liệu theo dõi hoạt động</li>
+			<li>Cần phải gán label cho các nhóm vì Kmeans chỉ khả năng phân cụm chứ không có khả năng gán nhãn</li>
+		</ul>
+
+		<p>Ứng dụng trong thực tế:</p>
+		<ul>
+			<li>Nén ảnh</li>
+			<li>Phân loại thư rác</li>
+			<li>Phân loại dựa trên lịch sử thanh toán (chi tiêu)</li>
+			<li>Phân loại dựa trên hoạt động trên ứng dụng di động, trên website, hay trên nền tảng ATM</li>
+			<li>Tạo profile của khách hàng dựa trên dữ liệu theo dõi hoạt động</li>
+			<li>Chia nhóm ảnh</li>
+			<li>Phân loại file audio</li>
+			<li>Chia nhóm trong theo dõi sức khỏe</li>
+			<li>Nhân dạng ảnh (Kmeans ko phải là giải pháp tốt)</li>
+			<li>...</li>
+		</ul>
+
+		<h3>Lý thuyết về Kmeans</h3>
+		<img src="assets1/Kmeans.jpg" width="500px">
+		<p>Chứng minh công thức Kmeans về mặt đại số:<a href="Report_Kmeans.pdf">Báo cáo Kmeans (nguồn:Dung Lai)</a></p>
+
+		<h3>Một số program về Kmeans cơ bản</h3>
+		<ol>
+			<li>Program phân cụm bằng Kmeans trong không gian 2D</li>
+			<img src="assets1/Kmeans_all.jpg" width="500px">
+			<p>File code (Python): <a href="Kmeans_AI/All_Kmeans_blog.py">Code Python-AI</a></p>
+
+			<li>Program Kmeans nén ảnh</li>
+			<p>Là program ứng dụng Kmeans để nén ảnh lại,nó giúp cho ảnh nhẹ hơn nhũng chất lượng ảnh giảm không đáng kể nếu K lớn</p>
+			<ul>
+				<li>K = 4</li>
+					<img src="Kmeans_AI/space_K=4.jpg" width="500px">
+
+				<li>K = 8</li>
+					<img src="Kmeans_AI/space_K=8.jpg" width="500px">
+
+				<li>K = 16</li>
+					<img src="Kmeans_AI/space_K=16.jpg" width="500px">
+
+				<li>Origin image</li>
+					<img src="Kmeans_AI/space.jpg" width="500px">
+			</ul>
+			<p>File code (Python)(1): <a href="Kmeans_AI/Kmeans_img_blog.py">Code Python-AI</a></p>
+			<p>File code (Python)(2): <a href="Kmeans_AI/Kmeans_img_library_blog.py">Code Python-AI</a></p>
+		</ol><hr>
+
+
+	<!-- Linear Regression -->
+		<h2 id="Linear_Regression">Linear Regression</h2>
+		<p>Linear Regression(Hồi quy tuyến tính) là một loại thuật toán Superrvised Learninng(học có giám sát) loại thuật toán này lấy vào data có label ban đầu để từ đó có thể huấn luyện và xác định xu hướng của data.Từ đó có thể dự đoán những data đầu vào mới chưa có label</p>
+
+		<p>Ưu điểm:</p>
+		<ul>
+			<li>Linear Regression là thuật toán có tính chính xác cao</li>
+			<li>Lập trình ra 1 thuật toán Linear Regression tương đối đơn giản</li>
+			<li>Có thể dùng tốt với những data nhỏ hay data có ít chiều</li>
+		</ul>
+		
+		<p>Nhược điểm:</p>
+		<ul>
+			<li>Thuật toán Linear Regression trong công thức của nó có (^-1).Nên nếu ma trận có nhiều vector,chiều thì phép (^-1) sẽ làm tốn rất nhiều tài nguyên máy</li>
+		</ul>
+
+		<p>Ứng dụng trong thực tế:</p>
+		<ul>
+			<li>Thuật toán Linear Regression theo tôi nó không có ứng dụng trong thực tế và nếu có thì chỉ nên được áp dụng với data nhỏ hay là phụ trợ cho thuật toán Gradient Descent</li>
+		</ul>
+
+		<h3>Lí thuyết về Linear Regression</h3>
+		<img src="Linear Regression/Linear_Regression_main.jpg" width="500px">
+		<p>Chứng minh công thức Linear Regression về mặt đại số: <a href="https://dunglai.github.io/2017/10/10/linear-regression/">Báo cáo Linear Regression (nguồn:Dung Lai)</a></p>
+
+		<h3>Một số program về Linear Regression cơ bản</h3>
+		<ol>
+			<li>Program xác định xu hướng là đường thẳng của data trong không gian 2D (Linear Regression)</li>
+				<img src="Linear Regression/straight_line.jpg" width="500px">
+				<p>File code(Python): <a href="Linear Regression/straight_line.py">Code Python-AI</a></p>
+
+			<li>Program xác định xu hướng là đường parabol của data trong không gian 2D (Linear Regression)</li>
+				<img src="Linear Regression/parabol.jpg" width="500px">
+				<p>File code(Python): <a href="Linear Regression/parabol.py">Code Python-AI</a></p>
+		</ol><hr>
+
+	<!-- Gradient Descent -->
+		<h2 id="Gradient_Desent">Gradient Descent</h2>
+		<p>Có công dụng tương tự Linear Regression chỉ khác về mặt công thức và phương pháp tiếp cận.Thuật toán Gradient Descent sẽ dò để tìm ra đường thẳng hay đường tốt nhất của data đó,bằng cách liên tục lấy tọa độ của các điểm tạo nên dường thẳng nó liên tục trừ đi đạo hàm của chúng</p>
+
+		<p>Ưu điểm:</p>
+		<ul>
+			<li>Vì phương pháp tính chỉ có tính đạo hàm nhân , cộng matrix giúp cho máy tính tốn ít tài nguyên hơn</li>
+			<li>Có thể dùng tốt với lượng data lớn , nhiều chiều</li>
+		</ul>
+
+		<p>Nhược điểm:</p>
+		<ul>
+			<li>Vì chỉ lấy x - đạo hàm(x) (Điều này đồng nghĩa với khi x càng gần đến điểm tối ưu thì đạo hàm x ~ 0 và càng khiến nó mỗi lần giảm đi càng ngày càng ít) .Nên không thể nào có thể tìm được đường chính xác nhất</li>
+			<li>Khi dùng Gradient Descent ta cần phải để ý điểm bắt đầu và độ trên mỗi lần di chuyển sao cho hợp lí (learning rate)</li>
+		</ul>
+
+		<p>Ứng dụng trong thực tế:</p>
+		<ul>
+			<li>Có thể giúp xác định xu hướng của data với lượng data lớn và có nhiều chiều (là một thuật toán hay được sử dụng trong thực tế thay cho Linear Regression)</li>
+		</ul>
+
+		<h3>Lí thuyết về Gradient Descent</h3>
+		<img src="Gradient Descent/gradient_descent_main.gif" width="500px">
+		<p>Chứng minh công thức Gradient Descent về mặt đại số: <a href="https://dunglai.github.io/2017/12/21/gradient-descent/">Báo cáo Gradient Descent (nguồn: Dung Lai)</a></p>
+
+		<h3>Một số Program về Gradient Descent cơ bản</h3>
+		<ol>
+			<li>Program xác định xu hướng là đường thẳng của data trong không gian 2D (Gradient Descent)</li>
+				<img src="Gradient Descent/gradient_descent_straight_line.gif" width="500px">
+				<p>File code(Python): <a href="Gradient Descent/Straight_line.py">Code Python-AI</a></p>
+
+			<li>Program xác định xu hướng là đường parabol của data trong không gian 2D (Gradient Descent)</li>
+				<img src="Gradient Descent/gradient_descent_parabol.gif" width="500px">
+				<p>File code(Python): <a href="Gradient Descent/Parabol.py">Code Python-AI</a></p>
+		</ol><hr>
+
+		<h2 id="KNN">KNN (K Nearest Neighbors)</h2>
+		<p>KNN là kiểu thuật toán thuộc loại Supervised learning(học có giám sát) loại này cần phải có label và cùng dạng.Nó có công dụng chỉ yếu là dự đoán xem data mới sẽ thuộc kiểu label nào(KNN cũng tương tự Kmeans đều là thuật toán phân cụm,những khác nhau về cách tiếp cận)</p>
+
+		<p>Ưu điểm:</p>
+		<ul>
+			<li>Không mất thời gian huấn luyện</li>
+		</ul>
+
+		<p>Nhược điểm:</p>
+		<ul>
+			<li>Nếu data cho vào lớn và nhiều chiều thì tài nguyên để KNN nhận định một data mới thuộc nhóm nào là rất lớn.Vì nó phải tính khoảng cách từ điểm data mới đó đến tất cả những data đc training</li>
+		</ul>
+
+		<p>Ứng dụng trong thực tế:</p>
+		<ul>
+			<li>Vì nhược điểm ở trên nên KNN không có ứng dụng trong thực tế (Nhưng có ứng dụng trong học tập)</li>
+		</ul>
+
+		<h3>Lí thuyết về KNN</h3>
+		<img src="KNN/knn_main.jpg" width="500px">
+		<p>Chứng minh công thức Gradient Descent về mặt đại số: <a href="https://dunglai.github.io/2017/12/09/k-nearest-neighbors/">Báo cáo Gradient Descent (nguồn: Dung Lai)</a></p>
+
+		<h3>Một số Program về KNN cơ bản</h3>
+		<ol>
+			<li>Program phân loại cách loại hoa thuộc nhóm (Iris flower)</li>
+				<img src="KNN/iris_flower.jpg" width="500px">
+				<p>File code(Python): <a href="KNN/iris_flower.py">Code Python-AI-not use library</a></p>
+				<p>File code(Python): <a href="KNN/iris_flower_library.py">Code Python-AI-use library</a></p>
+			<li>Program phân loại cách loại chữ số viết tay thuộc nhóm (Digits)</li>
+				<img src="KNN/digits.jpg" width="500px">
+				<p>File code(Python): <a href="KNN/digits_library.py">Code Python-AI-use library</a></p>
+			<li>Program dùng KNN làm bài Regression</li>
+				<img src="KNN/regression.jpg" width="500px">
+				<p>File code(Python): <a href="KNN/regression.py">Code Python-AI-use library</a></p>
+		</ol>
+
+
+		</div>
+	</div>
+
+	<footer>
+		<h3>
+			<span><a href="begin.html">&#10229</a></span>
+			<strong>Được tạo ra bởi - Trương Dũng</strong>
+		</h3>
+	</footer>
+
+</body>
+</html>

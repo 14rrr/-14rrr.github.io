@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DLLT From</title>
+	<meta charset="utf-8"/>
+	<meta name="description" content="DLLT From"/>
+	<meta name="keywords" content="From, Course, IT, Registration"/>
+	<meta name="author" content="Dung Truong">
+	<script src="Js/register.js"></script>	
+</head>
+<body>
+	<h1>DLLT Education</h1>
+	<h2>Registration From</h2>
+	<div id="error" style="color: red;"></div>
+	<form id="registerForm" method="post" action="confirm.html">
+		<fieldset>
+			<legend>Personal information</legend>
+			<p><label for="firstname">Enter your First Name:</label>
+			<input type="text" id="firstname" name="firstname"/></p>
+
+			<p><label for="lastname">Enter your Last Name:</label>
+			<input type="text" id="lastname" name="lastname"/></p>
+
+			<p><label for="email">Enter your Email:</label>
+			<input type="text" id="email" name="email"/></p>
+
+			<p><label for="phonenumber">Enter your Phone Number:</label>
+			<input type="text" id="phonenumber" name="phonenumber"/></p>
+
+			<p><label for="age">Enter your Age:</label>
+			<input type="text" id="age" name="age"/></p>
+		</fieldset>
+
+		<br>
+		<fieldset id="radio_occupation">
+			<legend>Select your occupation</legend>
+			<label for="highschool">High School</label>
+			<input type="radio" name="occupation" id="highschool" value="highschool"><br/>
+
+			<label for="university">University</label>
+			<input type="radio" name="occupation" id="university" value="university"><br/>
+
+			<label for="working">Working</label>
+			<input type="radio" name="occupation" id="working" value="working"><br/>
+
+			<label for="retired">Retired</label>
+			<input type="radio" name="occupation" id="retired" value="retired"><br/>
+		</fieldset>
+
+		<br/>
+		<fieldset id="radio_select_courses">
+			<legend>Select Courses</legend>
+			<label for="course_logicmath">Logic Math - 499VND</label>
+			<input type="checkbox" id="course_logicmath" name="course_logicmath" value="selected"/><br/>
+
+			<label for="course_python">Python - 799VND</label>
+			<input type="checkbox" id="course_python" name="course_python" value="selected"/><br/>
+
+			<label for="course_web">Web Basic - 799VND</label>
+			<input type="checkbox" id="course_web" name="course_web" value="selected"/><br/>
+
+			<label for="course_game">Game Python - 149VND</label>
+			<input type="checkbox" id="course_game" name="course_game" value="selected"/><br/>
+
+			<label for="course_datascience">Data Science Basis - 249VND</label>
+			<input type="checkbox" id="course_datascience" name="course_datascience" value="selected"/><br/>
+
+			<label for="course_ai">AI Basic - 499VND</label>
+			<input type="checkbox" id="course_ai" name="course_ai" value="selected"/><br/>
+		</fieldset>
+
+		<br/>
+		<label for="payment">Payment method</label>
+		<select id="payment" name="payment">
+			<option value="none">Please select</option>
+			<option value="paypal">Paypal</option>
+			<option value="creditcard">Credit Card</option>
+		</select>
+		<br/>
+		<br/>
+		<input type="submit" value="Register Now"/>
+		<input type="reset" name="Reset"/>
+	</form>
+</body>
+</html>
